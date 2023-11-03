@@ -19,25 +19,20 @@ export default {
   },
   mainMenu: [
     {
-      name: 'About',
+      name: 'Apie',
       link: '/about'
     },
     {
-      name: 'Contact',
+      name: 'Kontaktai',
       link: '/contact'
     },
     {
-      name: 'Categories',
+      name: 'Paslaugos',
       link: '/categories'
     },
     {
-      name: 'Github Repo',
-      link: 'https://github.com/danielkellyio/awake-template',
-      target: '_blank'
-    },
-    {
-      name: 'Awake+ Premium',
-      link: 'https://awake-premium-lp.netlify.com/',
+      name: 'Github',
+      link: 'https://github.com/tomasmaroscikas',
       target: '_blank'
     }
   ],
@@ -67,7 +62,7 @@ export default {
   // Newsletter Subscribe
   newsletter: {
     on: true,
-    heading: 'Subscribe to Our Newsletter',
+    heading: 'Prenumerata',
     btnText: 'Subscribe',
     // Can be the form action on a mail chimp form, a hubspot form,
     // or any other url you want to post the form data to
