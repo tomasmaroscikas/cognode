@@ -13,7 +13,7 @@
             class="input"
             type="email"
             name="EMAIL"
-            placeholder="Email"
+            placeholder="El. paštas"
           />
           <span class="icon is-small is-left">
             <font-awesome-icon icon="envelope" />
@@ -22,7 +22,7 @@
         </p>
         <div class="control">
           <button type="submit" class="button is-primary">
-            {{ $siteConfig.newsletter.btnText || 'Subscribe' }}
+            {{ $siteConfig.newsletter.btnText || 'Prenumeruoti' }}
           </button>
         </div>
       </div>

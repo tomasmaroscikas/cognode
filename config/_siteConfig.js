@@ -19,21 +19,16 @@ export default {
   },
   mainMenu: [
     {
-      name: 'Apie',
-      link: '/about'
+      name: 'Paslaugos',
+      link: '/categories'
     },
     {
       name: 'Kontaktai',
       link: '/contact'
     },
     {
-      name: 'Paslaugos',
-      link: '/categories'
-    },
-    {
-      name: 'Github',
-      link: 'https://github.com/tomasmaroscikas',
-      target: '_blank'
+      name: 'Apie',
+      link: '/about'
     }
   ],
   hero: {

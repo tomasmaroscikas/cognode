@@ -51,7 +51,7 @@
     </div>
     <div class="control">
       <button class="button is-primary">
-        Siųsti
+        Pateikti
       </button>
     </div>
   </form>

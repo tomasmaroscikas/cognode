@@ -31,7 +31,7 @@
                   </strong>
                 </p>
                 <p>
-                  Mokymai, dirbtinis intelektas, automatizavimas, integravimas, mokėjimai tai mūsų sritis.
+                  Mokymai, dirbtinis intelektas, automatizavimas, integravimas, mokėjimai - tai mūsų sritys.
                 </p>
               </div>
             </article>
