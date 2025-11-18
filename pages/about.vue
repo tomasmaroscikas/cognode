@@ -1,8 +1,8 @@
 <template>
   <div id="about-page" class="page-wrapper about-page content-page">
     <site-hero
-      title="About Us"
-      subtitle="Example About Page"
+      title="Apie Mus"
+      subtitle="Cognode Komanda"
       image="/uploads/about-hero.jpg"
     ></site-hero>
     <main-section theme="sidebar-right">
@@ -84,13 +84,6 @@
           </div>
         </div>
       </template>
-
-      <template v-slot:sidebar>
-        <h3 class="subtitle is-4">
-          Latest Posts
-        </h3>
-        <posts-grid :per-row="1" :number="2" />
-      </template>
     </main-section>
   </div>
 </template>
@@ -99,7 +92,7 @@ import QuoteCard from '~/components/cards/QuoteCard'
 export default {
   head() {
     return {
-      title: `About | ${this.$siteConfig.siteName}`
+      title: `Apie | ${this.$siteConfig.siteName}`
     }
   },
   components: { QuoteCard }

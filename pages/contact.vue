@@ -1,8 +1,7 @@
 <template>
   <div id="contact-page" class="page-wrapper contact-page content-page">
     <site-hero
-      title="Contact Us"
-      subtitle="Example Contact Page"
+      title="Susisiekite"
       image="/uploads/contact-hero.jpg"
     ></site-hero>
     <main-section theme="sidebar-right">
@@ -11,10 +10,10 @@
           <div class="tile is-parent">
             <article class="tile is-child box">
               <p class="title">
-                Hello!
+                Sveiki!
               </p>
               <p class="subtitle">
-                What can I do for you?
+                Kuo galiu Jums padėti?
               </p>
               <figure class="image is-1by1 ">
                 <opti-image
@@ -28,15 +27,11 @@
               <div class="content">
                 <p>
                   <strong>
-                    Edit this page in<code>/pages/contact.vue</code>to fit your
-                    needs.
+                    Parašykite mums ir mes su jumis susisieksime.
                   </strong>
                 </p>
                 <p>
-                  This form doesn't actually work but would be easy enough to
-                  slap an action on to have it post wherever you'd like. Or put
-                  the netlify attribute on it and have netlify handle all your
-                  form submissions...
+                  Mokymai, dirbtinis intelektas, automatizavimas, integravimas, mokėjimai tai mūsų sritis.
                 </p>
               </div>
             </article>
@@ -47,13 +42,6 @@
             </article>
           </div>
         </div>
-      </template>
-      <template v-slot:sidebar>
-        <h3 class="subtitle is-4">
-          Latest Posts
-        </h3>
-        <!-- Latest Posts -->
-        <posts-grid :per-row="1" :number="2" />
       </template>
     </main-section>
   </div>
