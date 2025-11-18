@@ -22,7 +22,7 @@ collections:
       - {label: "Featured Image", name: "featureImage", widget: "image"}
       - {label: "Body", name: "body", widget: "markdown"}
   - name: "categories"
-    label: "Categories"
+    label: "Paslaugos"
     folder: "content/categories"
     create: true
     slug: "{{slug}}"
