@@ -5,7 +5,7 @@ class Category {
     this.slug = 'category'
     this.slugPlural = 'categories'
     this.pretty = 'Category'
-    this.plural = 'Categories'
+    this.plural = 'Paslaugos'
     this.axios = axios
   }
 }
