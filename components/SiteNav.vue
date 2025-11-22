@@ -1,6 +1,6 @@
 <template>
   <nav
-    class="navbar has-shadow is-fixed-top"
+    class="navbar has-shadow is-fixed-top landing-nav"
     role="navigation"
     aria-label="main navigation"
   >
@@ -31,7 +31,7 @@
           @click="active = false"
         >
           <component
-            :is="item.link.startsWith('http') ? 'a' : 'nuxt-link'"
+            :is="linkType(item.link)"
             :href="item.link"
             :to="item.link"
             :target="item.target ? item.target : '_self'"
@@ -39,22 +39,27 @@
             {{ item.name }}
           </component>
         </li>
-        <li class="navbar-item site-search-wrapper">
-          <site-search />
-        </li>
       </ul>
     </div>
   </nav>
 </template>
 <script>
-import SiteSearch from '~/components/SiteSearch'
 import HamburgerButton from '~/components/HamburgerButton'
 export default {
   name: 'SiteNav',
-  components: { SiteSearch, HamburgerButton },
+  components: { HamburgerButton },
   data() {
     return {
       active: false
+    }
+  },
+  methods: {
+    linkType(link) {
+      if (link.startsWith('#') || link.startsWith('http')) {
+        return 'a'
+      }
+
+      return 'nuxt-link'
     }
   }
 }
@@ -63,17 +68,16 @@ export default {
 .navbar-item img {
   max-height: 2rem;
 }
-.site-search-wrapper {
-  transform: translateX(5px);
-  @media (max-width: 1023px) {
-    display: none;
-  }
-}
 .navbar-burger {
   height: auto;
 }
 
 .navbar-menu a {
   display: block;
+}
+.landing-nav {
+  background: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(6px);
+  border-bottom: 1px solid #e6e6e6;
 }
 </style>
