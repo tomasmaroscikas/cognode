@@ -23,7 +23,7 @@
         'is-active': active
       }"
     >
-      <ul class="navbar-end">
+      <ul class="navbar-menu-center">
         <li
           v-for="item in $siteConfig.mainMenu"
           :key="item.link"
@@ -74,6 +74,22 @@ export default {
 
 .navbar-menu a {
   display: block;
+}
+.navbar-menu {
+  flex: 1;
+  justify-content: center;
+}
+.navbar-menu-center {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+@media screen and (min-width: 1024px) {
+  .navbar-menu-center {
+    flex-direction: row;
+    justify-content: center;
+  }
 }
 .landing-nav {
   background: rgba(255, 255, 255, 0.95);
