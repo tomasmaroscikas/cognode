@@ -27,14 +27,15 @@
         <li
           v-for="item in $siteConfig.mainMenu"
           :key="item.link"
-          class="navbar-item"
-          @click="active = false"
+          :class="['navbar-item', { 'is-active': isActive(item) }]"
+          @click="handleMenuClick(item)"
         >
           <component
             :is="linkType(item.link)"
             :href="item.link"
             :to="item.link"
             :target="item.target ? item.target : '_self'"
+            :class="{ 'has-underline': isActive(item) }"
           >
             {{ item.name }}
           </component>
@@ -50,16 +51,68 @@ export default {
   components: { HamburgerButton },
   data() {
     return {
-      active: false
+      active: false,
+      activeSection: ''
+    }
+  },
+  mounted() {
+    this.initScrollSpy()
+  },
+  beforeDestroy() {
+    if (this.sectionObserver) {
+      this.sectionObserver.disconnect()
     }
   },
   methods: {
+    initScrollSpy() {
+      if (!process.client) return
+
+      const sectionIds = this.$siteConfig.mainMenu
+        .map((item) => this.sectionIdFromLink(item.link))
+        .filter(Boolean)
+
+      if (!sectionIds.length) return
+
+      this.sectionObserver = new window.IntersectionObserver(
+        (entries) => {
+          entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+              this.activeSection = entry.target.id
+            }
+          })
+        },
+        {
+          rootMargin: '-40% 0px -40% 0px'
+        }
+      )
+
+      sectionIds.forEach((id) => {
+        const el = document.getElementById(id)
+        if (el) {
+          this.sectionObserver.observe(el)
+        }
+      })
+    },
     linkType(link) {
       if (link.startsWith('#') || link.startsWith('http')) {
         return 'a'
       }
 
       return 'nuxt-link'
+    },
+    sectionIdFromLink(link) {
+      return link.startsWith('#') ? link.slice(1) : null
+    },
+    isActive(item) {
+      const sectionId = this.sectionIdFromLink(item.link)
+      return sectionId && sectionId === this.activeSection
+    },
+    handleMenuClick(item) {
+      this.active = false
+      const sectionId = this.sectionIdFromLink(item.link)
+      if (sectionId) {
+        this.activeSection = sectionId
+      }
     }
   }
 }
@@ -74,6 +127,14 @@ export default {
 
 .navbar-menu a {
   display: block;
+}
+.navbar-item .has-underline {
+  padding-bottom: 0.25rem;
+  border-bottom: 2px solid transparent;
+  transition: border-color 0.2s ease;
+}
+.navbar-item.is-active .has-underline {
+  border-color: #1b3c6f;
 }
 .navbar-menu {
   flex: 1;
