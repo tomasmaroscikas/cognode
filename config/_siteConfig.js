@@ -10,7 +10,7 @@ import theCMS from '../cms/netlify/cms'
  */
 export default {
   siteName: 'Cognode',
-  tagline: 'Pažinimo taškas',
+  tagline: 'AI services that keep your business moving forward',
   featureImage: '/uploads/home-hero.jpg',
   logo: 'logo-component', // 'logo-component', // or '/logo.svg' for regular image
   googleAnalytics: {
@@ -19,16 +19,16 @@ export default {
   },
   mainMenu: [
     {
-      name: 'Paslaugos',
-      link: '/categories'
+      name: 'Services',
+      link: '#services'
     },
     {
-      name: 'Kontaktai',
-      link: '/contact'
+      name: 'About us',
+      link: '#about'
     },
     {
-      name: 'Apie',
-      link: '/about'
+      name: 'Contacts',
+      link: '#contact'
     }
   ],
   hero: {
@@ -49,7 +49,7 @@ export default {
 
   // Disqus
   disqus: {
-    on: true,
+    on: false,
     loadingStrategy: 'button', // Options: onload, lazy, button
     siteShortName: 'blog-danielkelly-io' // 'blog-danielkelly-io'
   },
@@ -74,7 +74,7 @@ export default {
 
   // Categories
   categories: {
-    on: true,
+    on: false,
     perPage: 6,
     imageDimensions: null, // See card.imageDimensions (can be unique for categories if set here)
     theme: null // See card.theme (can be unique for categories if set here)
@@ -82,7 +82,7 @@ export default {
 
   // Posts
   posts: {
-    on: true,
+    on: false,
     theme: null, // See card.theme (can be unique for posts if set here)
     imageDimensions: null, // See card.imageDimensions (can be unique for posts if set here)
     displayAuthor: true,

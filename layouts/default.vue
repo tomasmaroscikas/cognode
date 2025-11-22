@@ -17,30 +17,27 @@ export default {
   transition: 'slide-fade',
   head() {
     return {
-      title: `${this.$store.state.title} | ${this.$siteConfig.siteName}`,
+      title: `${this.pageTitle} | ${this.$siteConfig.siteName}`,
       meta: [
         {
           hid: 'description',
           name: 'description',
-          content: this.$store.state.subtitle
+          content: this.pageSubtitle
         },
         {
           hid: 'og:description',
           property: 'og:description',
-          content: this.$store.state.subtitle
+          content: this.pageSubtitle
         },
         {
           hid: 'og:title',
           property: 'og:title',
-          content: this.$store.state.title
+          content: this.pageTitle
         },
         {
           hid: 'og:image',
           property: 'og:image',
-          content: this.$store.state.featureImage
-            ? (process.env.URL ? process.env.URL : '') +
-              require(`~/assets${this.$store.state.featureImage}`)
-            : ''
+          content: this.shareImage
         },
         {
           hid: 'og:url',
@@ -74,6 +71,23 @@ export default {
           to: { name: 'inspire' }
         }
       ]
+    }
+  },
+  computed: {
+    pageTitle() {
+      return this.$store.state.title || this.$siteConfig.siteName
+    },
+    pageSubtitle() {
+      return this.$store.state.subtitle || this.$siteConfig.tagline
+    },
+    shareImage() {
+      const featureImage =
+        this.$store.state.featureImage || this.$siteConfig.featureImage
+
+      return featureImage
+        ? (process.env.URL ? process.env.URL : '') +
+            require(`~/assets${featureImage}`)
+        : ''
     }
   },
   watch: {
