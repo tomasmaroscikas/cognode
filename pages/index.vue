@@ -7,10 +7,10 @@
             Cognode
           </p>
           <h1 class="title is-1 has-text-white">
-            AI sprendimai sparčiai dirbančioms komandoms
+            DI sprendimai sparčiai dirbančioms komandoms
           </h1>
           <p class="lead has-text-white-bis">
-            Kuriame, diegiame ir prižiūrime praktiškus AI sprendimus be didelių platformos išlaidų. Susitelkiame į tai, kas svarbiausia, kad jūs galėtumėte susitelkti į savo klientus.
+            Kuriame, diegiame ir prižiūrime praktiškus DI sprendimus be didelių platformos išlaidų. Susitelkiame į tai, kas svarbiausia, kad jūs galėtumėte susitelkti į savo klientus.
           </p>
           <div class="buttons">
             <a class="button is-primary is-medium" href="#services">Mūsų paslaugos</a>
