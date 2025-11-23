@@ -53,12 +53,13 @@
           </div>
           <div class="column">
             <div class="about-card box">
-              <h3 class="title is-5">How we work</h3>
+              <h3 class="title is-5">Kaip mes dirbame</h3>
               <ul>
-                <li>Mažiau sensacijos, daugiau sprendimų.</li>
-                <li>Greitai kuriame prototipus, iškart įtraukdami naudotojų grįžtamąjį ryšį.</li>
-                <li>Diegimas, stebėsena, palaikymas.</li>
-                <li>Mokymai.</li>
+                <li>Susitelkiame į tikslą</li>
+                <li>Greitai kuriame prototipus</li>
+                <li>Nuolatinis naudotojų grįžtamasis ryšys</li>
+                <li>Diegimas, stebėsena, palaikymas</li>
+                <li>Mokymai</li>
               </ul>
             </div>
           </div>
@@ -75,9 +76,9 @@
         </p>
         <div class="contact-panel box">
           <div>
-            <h3 class="title is-4">Reach out</h3>
-            <p>Email: <a href="mailto:info@cognode.lt">info@cognode.lt</a></p>
-            <p>Phone: <a href="tel:+37061511111">+370 686 78094</a></p>
+            <h3 class="title is-4">Kontaktai</h3>
+            <p>El. paštas: <a href="mailto:info@cognode.lt">info@cognode.lt</a></p>
+            <p>Telefonas: <a href="tel:+37061511111">+370 686 78094</a></p>
           </div>
           <div class="contact-actions">
             <a class="button is-primary is-medium" href="mailto:info@cognode.lt">
@@ -97,16 +98,20 @@ export default {
     return {
       services: [
         {
-          title: 'Applied AI consulting',
-          copy: 'Clarify opportunities, assess feasibility, and design a roadmap aligned with your business goals.'
+          title: 'DI taikymo konsultacijos',
+          copy: 'Padedame aiškiai įvardyti galimybes, įvertiname jų realumą ir parengiame veiksmų planą, atitinkantį jūsų verslo tikslus.'
         },
         {
-          title: 'Model development',
-          copy: 'Custom models built on reliable data pipelines with strong evaluation practices.'
+          title: 'DI modelių kūrimas',
+          copy: 'Individualiūs modeliai, paremti patikimais duomenų srautais ir tvirta vertinimo metodika.'
         },
         {
-          title: 'Integration & automation',
-          copy: 'Embed AI features into your existing tools and workflows without disrupting your team.'
+          title: 'Integravimas ir automatizavimas',
+          copy: 'Integruojame DI funkcijas į jūsų naudojamus įrankius ir procesus — be trikdžių jūsų komandai.'
+        },
+        {
+          title: 'DI mokymai',
+          copy: 'Rengiame praktinius DI mokymus, kad jūsų komanda galėtų taikyti DI kasdieniuose darbuose ir kurti apčiuopiamą vertę.'
         }
       ]
     }
@@ -114,7 +119,7 @@ export default {
   created() {
     this.$store.commit('set', {
       title: 'Cognode',
-      subtitle: 'AI services tailored for fast-moving teams',
+      subtitle: 'DI sprendimai sparčiai dirbančioms komandoms',
       featureImage: this.$siteConfig.featureImage
     })
   }
