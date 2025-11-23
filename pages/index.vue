@@ -7,16 +7,14 @@
             Cognode
           </p>
           <h1 class="title is-1 has-text-white">
-            AI services tailored for fast-moving teams
+            AI sprendimai sparčiai dirbančioms komandoms
           </h1>
           <p class="lead has-text-white-bis">
-            Build, ship, and maintain practical AI solutions without the overhead of a
-            full platform. We focus on the essentials so you can stay focused on your
-            customers.
+            Kuriame, diegiame ir prižiūrime praktiškus AI sprendimus be didelių platformos išlaidų. Susitelkiame į tai, kas svarbiausia, kad jūs galėtumėte susitelkti į savo klientus.
           </p>
           <div class="buttons">
-            <a class="button is-primary is-medium" href="#services">Explore services</a>
-            <a class="button is-light is-medium" href="#contact">Talk to us</a>
+            <a class="button is-primary is-medium" href="#services">Mūsų paslaugos</a>
+            <a class="button is-light is-medium" href="#contact">Aptarkime</a>
           </div>
         </div>
       </div>
@@ -24,11 +22,10 @@
 
     <section id="services" class="section section-spaced">
       <div class="container">
-        <p class="overline">Services</p>
-        <h2 class="title is-2">What we deliver</h2>
+        <p class="overline">Paslaugos</p>
+        <h2 class="title is-2">Sprendimai, kuriuos teikiame</h2>
         <p class="section-lead">
-          From quick prototypes to production-ready systems, we keep each engagement
-          lightweight and focused on measurable outcomes.
+          Nuo greitų prototipų iki gamybai parengtų sistemų — kiekvieną užduotį atliekame paprastai ir susitelkiame į išmatuojamus rezultatus.
         </p>
         <div class="columns is-multiline">
           <div class="column is-one-third" v-for="service in services" :key="service.title">
@@ -43,29 +40,25 @@
 
     <section id="about" class="section section-spaced has-background-light">
       <div class="container">
-        <p class="overline">About us</p>
-        <h2 class="title is-2">Pragmatic partners for AI adoption</h2>
+        <p class="overline">Apie mus</p>
+        <h2 class="title is-2">Praktiškas AI diegimo partneris</h2>
         <div class="columns is-vcentered">
           <div class="column is-two-thirds">
             <p class="section-lead">
-              Cognode is a compact team of engineers and product strategists. We have
-              shipped AI-powered features for SaaS companies, professional service
-              firms, and startups that need to move quickly without sacrificing
-              reliability.
+              „Cognode“ – kompaktiška inžinierių ir produktų strategų komanda. Kuriame dirbtinio intelekto funkcijas SaaS įmonėms, profesionalių paslaugų verslams ir startuoliams, kuriems reikia veikti greitai, neprarandant patikimumo.
             </p>
             <p class="section-lead">
-              We collaborate closely with your stakeholders, translate goals into
-              clear deliverables, and document every step so your team can maintain the
-              solution long after launch.
+              Dirbame kartu su jūsų suinteresuotosiomis šalimis, išgryniname tikslus į konkrečius, išmatuojamus rezultatus ir nuosekliai dokumentuojame procesą. Taip jūsų komanda gali sprendimą išlaikyti ir sėkmingai naudoti ilgą laiką po įdiegimo.
             </p>
           </div>
           <div class="column">
             <div class="about-card box">
               <h3 class="title is-5">How we work</h3>
               <ul>
-                <li>Discovery focused on the problem, not the hype.</li>
-                <li>Prototype quickly with user feedback loops baked in.</li>
-                <li>Production rollouts with monitoring and handover support.</li>
+                <li>Mažiau sensacijos, daugiau sprendimų.</li>
+                <li>Greitai kuriame prototipus, iškart įtraukdami naudotojų grįžtamąjį ryšį.</li>
+                <li>Diegimas, stebėsena, palaikymas.</li>
+                <li>Mokymai.</li>
               </ul>
             </div>
           </div>
@@ -75,21 +68,20 @@
 
     <section id="contact" class="section section-spaced">
       <div class="container">
-        <p class="overline">Contacts</p>
-        <h2 class="title is-2">Let’s start with a short call</h2>
+        <p class="overline">Kontaktai</p>
+        <h2 class="title is-2">Pradėkime nuo trumpo pokalbio</h2>
         <p class="section-lead">
-          Tell us about your use case and we will suggest the fastest path to a
-          working solution.
+          Papasakokite apie savo naudojimo atvejį, o mes pasiūlysime greičiausią kelią iki veikiančio sprendimo.
         </p>
         <div class="contact-panel box">
           <div>
             <h3 class="title is-4">Reach out</h3>
             <p>Email: <a href="mailto:info@cognode.lt">info@cognode.lt</a></p>
-            <p>Phone: <a href="tel:+37061511111">+370 615 11111</a></p>
+            <p>Phone: <a href="tel:+37061511111">+370 686 78094</a></p>
           </div>
           <div class="contact-actions">
             <a class="button is-primary is-medium" href="mailto:info@cognode.lt">
-              Book a chat
+              Rezervuokite pokalbį
             </a>
           </div>
         </div>
