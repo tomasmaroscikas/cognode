@@ -19,15 +19,15 @@ export default {
   },
   mainMenu: [
     {
-      name: 'Services',
+      name: 'Paslaugos',
       link: '#services'
     },
     {
-      name: 'About us',
+      name: 'Apie mus',
       link: '#about'
     },
     {
-      name: 'Contacts',
+      name: 'Kontaktai',
       link: '#contact'
     }
   ],
